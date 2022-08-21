@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <title>
+        <%= title %>
+    </title>
+
+    <link rel="stylesheet" href="./css/contacts.css">
+</head>
+    <body>
+
+        <div class="main">
+            <h1 id="heading">This is My Contact List</h1>
+            <div class="contacts">
+                <% for ( i of ContactList) { %>
+                <div id="container">
+                    <div id="item"> <%= i.name %> </div>
+                    <div id="item"> <%= i.phone %> </div>
+                </div>    
+                <% } %>
+            </div>
+            <form action="/create-contact" method="post">
+                <input type="text" name="name" placeholder="Enter Name" id="cname" required>
+                <input type="number" name="phone" placeholder="Enter Mobile Number" id="cphone" required>
+                <button id="btn" type="submit">Add Contact</button>
+            </form>
+        </div>
+
+    </body>
+</html> 

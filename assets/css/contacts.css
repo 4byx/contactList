@@ -1,0 +1,65 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(39, 39, 66);
+}
+
+
+.main{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#heading{
+    color: rgb(122, 122, 203);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    border-bottom: 3px solid rgb(69, 69, 117);
+    border-radius: 5px;
+}
+
+#container #item{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    margin: 5px;
+    width: 100%;
+}
+
+#container :nth-child(1) {
+    border-right: 3px solid rgb(69, 69, 117);
+}
+
+form {
+    margin-top: 10px;
+}
+
+#cname , #cphone{
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 58, 130);
+    height: 35px;
+    text-align: center;
+    border: 2px solid rgb(146, 146, 220);
+    border-radius: 5px;
+}
+
+#btn{
+    background-color: rgb(107, 107, 171);
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
